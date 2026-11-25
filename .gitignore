@@ -1,0 +1,19 @@
+# Secrets: only the template is tracked.
+.env
+.env.*
+!.env.example
+
+# Local environment.
+.venv/
+
+# Rollout videos, eval logs, API audit files.
+outputs/
+archive/rollouts/*/episode_00/realtime_video_frames/
+archive/rollouts/*/episode_00/video_frames/
+logs/
+budget.html
+.wrangler/
+
+__pycache__/
+*.py[cod]
+*.egg-info/

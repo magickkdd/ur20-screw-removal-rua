@@ -1,0 +1,62 @@
+{
+  "protocol": {
+    "model": "openai/gpt-6-luna",
+    "profile": "luna",
+    "state_id": 0,
+    "force_feedback": true,
+    "compliant_control": true,
+    "spiral_search": true,
+    "twist_after_seating": true,
+    "reasoning_effort": "low",
+    "viewer": false,
+    "paired": true
+  },
+  "baseline": {
+    "method": "baseline",
+    "output": "outputs/ur20_luna_state00_20261126_004036",
+    "status": "success",
+    "wall_clock_seconds": 1002.8601940700028,
+    "api_wait_seconds": 692.4684216709866,
+    "calls": 32,
+    "input_tokens": 988490,
+    "output_tokens": 3210,
+    "cached_input_tokens": 231808,
+    "estimated_usd": 0.07959128,
+    "max_screw_lift_m": 0.020704996710138073,
+    "socket_turn_stop_reason": "screw_extracted",
+    "physics_steps": 49397,
+    "sim_steps": 1896,
+    "action_stream_segments": 0,
+    "action_stream_points": 0
+  },
+  "risk_adaptive": {
+    "method": "risk_adaptive",
+    "output": "outputs/ur20_luna_state00_20261126_010253",
+    "status": "success",
+    "wall_clock_seconds": 342.3527075620077,
+    "api_wait_seconds": 82.72524572396651,
+    "calls": 5,
+    "input_tokens": 51328,
+    "output_tokens": 481,
+    "cached_input_tokens": 24832,
+    "estimated_usd": 0.0031384200000000007,
+    "max_screw_lift_m": 0.02070944747674195,
+    "socket_turn_stop_reason": "screw_extracted",
+    "physics_steps": 48525,
+    "sim_steps": 1904,
+    "action_stream_segments": 3,
+    "action_stream_points": 8,
+    "history_compactions": 1,
+    "adaptive_single_view_observations": 0,
+    "prompt_cache_key": "ur20-risk-adaptive-state00-gpt6-luna"
+  },
+  "relative_change": {
+    "wall_clock_reduction_fraction": 0.6586236949214175,
+    "api_wait_reduction_fraction": 0.8805357137812244,
+    "call_reduction_fraction": 0.84375,
+    "input_token_reduction_fraction": 0.9480741336889991,
+    "estimated_cost_reduction_fraction": 0.9605645003310015,
+    "success_preserved": true
+  },
+  "evidence_scope": "One paired state-00 real-LLM run per method; not a population-level estimate."
+}
