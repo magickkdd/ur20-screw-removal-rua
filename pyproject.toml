@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling>=1.18"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ur20-screw-removal"
+version = "0.1.0"
+description = "Standalone UR20 simulation and LLM policy for battery screw removal."
+readme = "README.md"
+requires-python = ">=3.10"
+keywords = ["robotics", "UR20", "MuJoCo", "screw-removal", "LLM"]
+dependencies = [
+    "mujoco>=3.2",
+    "numpy>=1.24",
+    "httpx>=0.27",
+    "pillow>=10",
+    "imageio-ffmpeg>=0.4.9",
+    "opencv-python-headless>=4.8",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/ur20_screw"]

@@ -1,0 +1,23 @@
+{"elapsed_seconds": 0.9679387369833421, "at": "2026-11-26T02:57:58.222148+08:00", "phase": "WAITING LLM", "event": "start"}
+{"elapsed_seconds": 10.75475087398081, "at": "2026-11-26T02:58:08.008961+08:00", "phase": "WAITING LLM", "event": "end"}
+{"elapsed_seconds": 10.754814393993001, "at": "2026-11-26T02:58:08.009020+08:00", "phase": "MOVE TO", "event": "start"}
+{"elapsed_seconds": 11.29311297100503, "at": "2026-11-26T02:58:08.547322+08:00", "phase": "MOVE TO", "event": "end"}
+{"elapsed_seconds": 11.293195548001677, "at": "2026-11-26T02:58:08.547402+08:00", "phase": "WAITING LLM", "event": "start"}
+{"elapsed_seconds": 20.098296088981442, "at": "2026-11-26T02:58:17.352505+08:00", "phase": "WAITING LLM", "event": "end"}
+{"elapsed_seconds": 20.098355761991115, "at": "2026-11-26T02:58:17.352562+08:00", "phase": "MOVE TO", "event": "start"}
+{"elapsed_seconds": 20.617134295986034, "at": "2026-11-26T02:58:17.871344+08:00", "phase": "MOVE TO", "event": "end"}
+{"elapsed_seconds": 20.617218696977943, "at": "2026-11-26T02:58:17.871425+08:00", "phase": "WAITING LLM", "event": "start"}
+{"elapsed_seconds": 28.86280682098004, "at": "2026-11-26T02:58:26.117016+08:00", "phase": "WAITING LLM", "event": "end"}
+{"elapsed_seconds": 28.862907992996043, "at": "2026-11-26T02:58:26.117121+08:00", "phase": "MOVE TO", "event": "start"}
+{"elapsed_seconds": 29.25451908199466, "at": "2026-11-26T02:58:26.508729+08:00", "phase": "LOCAL APPROACH", "event": "start"}
+{"elapsed_seconds": 31.597693230985897, "at": "2026-11-26T02:58:28.851903+08:00", "phase": "LOCAL APPROACH", "event": "end"}
+{"elapsed_seconds": 31.597752212983323, "at": "2026-11-26T02:58:28.851958+08:00", "phase": "MOVE TO", "event": "end"}
+{"elapsed_seconds": 31.597814951994224, "at": "2026-11-26T02:58:28.852020+08:00", "phase": "WAITING LLM", "event": "start"}
+{"elapsed_seconds": 41.32726995399571, "at": "2026-11-26T02:58:38.581479+08:00", "phase": "WAITING LLM", "event": "end"}
+{"elapsed_seconds": 41.3273615379876, "at": "2026-11-26T02:58:38.581567+08:00", "phase": "SPIRAL SEARCH", "event": "start"}
+{"elapsed_seconds": 45.50153404197772, "at": "2026-11-26T02:58:42.755743+08:00", "phase": "SPIRAL SEARCH", "event": "end"}
+{"elapsed_seconds": 45.50160881399643, "at": "2026-11-26T02:58:42.755815+08:00", "phase": "WAITING LLM", "event": "start"}
+{"elapsed_seconds": 53.51563975898898, "at": "2026-11-26T02:58:50.769849+08:00", "phase": "WAITING LLM", "event": "end"}
+{"elapsed_seconds": 53.51570914097829, "at": "2026-11-26T02:58:50.769915+08:00", "phase": "TURN SOCKET", "event": "start"}
+{"elapsed_seconds": 289.8609270089946, "at": "2026-11-26T03:02:47.115136+08:00", "phase": "TURN SOCKET", "event": "end"}
+{"elapsed_seconds": 289.8610093049938, "at": "2026-11-26T03:02:47.115215+08:00", "phase": "SUCCESS", "event": "start"}

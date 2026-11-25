@@ -1,0 +1,103 @@
+{
+  "protocol": {
+    "model": "openai/gpt-6-luna",
+    "profile": "luna",
+    "force_feedback": true,
+    "compliant_control": true,
+    "spiral_search": true,
+    "twist_after_seating": true,
+    "reasoning_effort": "low",
+    "viewer": false,
+    "wall_clock_includes_llm_waiting": true
+  },
+  "runs": [
+    {
+      "label": "baseline_state00",
+      "method": "baseline",
+      "state_id": 0,
+      "action_amplification": 3.0,
+      "output": "outputs/ur20_luna_state00_20261126_004036",
+      "status": "success",
+      "wall_clock_seconds": 1002.8601940700028,
+      "api_wait_seconds": 692.4684216709866,
+      "calls": 32,
+      "max_screw_lift_m": 0.020704996710138073,
+      "socket_turn_stop_reason": "screw_extracted"
+    },
+    {
+      "label": "risk_adaptive_state00",
+      "method": "risk_adaptive",
+      "state_id": 0,
+      "action_amplification": 3.0,
+      "output": "outputs/ur20_luna_state00_20261126_010253",
+      "status": "success",
+      "wall_clock_seconds": 342.3527075620077,
+      "api_wait_seconds": 82.72524572396651,
+      "calls": 5,
+      "max_screw_lift_m": 0.02070944747674195,
+      "socket_turn_stop_reason": "screw_extracted",
+      "action_stream_segments": 3,
+      "action_stream_points": 8
+    },
+    {
+      "label": "rua_full_state00_a3",
+      "method": "rua_full",
+      "rua_profile": "ur20_full",
+      "state_id": 0,
+      "action_amplification": 3.0,
+      "output": "outputs/ur20_luna_state00_20261126_024659",
+      "status": "success",
+      "wall_clock_seconds": 319.37920340901474,
+      "api_wait_seconds": 64.424,
+      "calls": 5,
+      "max_screw_lift_m": 0.020709475130775142,
+      "socket_turn_stop_reason": "screw_extracted",
+      "action_stream_segments": 3,
+      "action_stream_points": 8,
+      "history_compactions": 3
+    },
+    {
+      "label": "rua_full_state00_a5",
+      "method": "rua_full",
+      "rua_profile": "ur20_full",
+      "state_id": 0,
+      "action_amplification": 5.0,
+      "output": "outputs/ur20_luna_state00_20261126_025757",
+      "status": "success",
+      "wall_clock_seconds": 297.06219838699326,
+      "api_wait_seconds": 44.486,
+      "calls": 5,
+      "max_screw_lift_m": 0.020703689845833984,
+      "socket_turn_stop_reason": "screw_extracted",
+      "action_stream_segments": 3,
+      "action_stream_points": 8,
+      "history_compactions": 3
+    },
+    {
+      "label": "rua_full_state01_a3",
+      "method": "rua_full",
+      "rua_profile": "ur20_full",
+      "state_id": 1,
+      "action_amplification": 3.0,
+      "output": "outputs/ur20_luna_state01_20261126_025240",
+      "status": "task_failure",
+      "wall_clock_seconds": 291.58346232702024,
+      "api_wait_seconds": 281.554,
+      "calls": 25,
+      "max_screw_lift_m": 0.0,
+      "socket_turn_stop_reason": "spiral_force_guard",
+      "action_stream_segments": 1,
+      "action_stream_points": 1,
+      "failure_reason": "spiral_force_guard at 66.16 N compensated force"
+    }
+  ],
+  "derived": {
+    "rua_full_a3_vs_baseline_wall_clock_reduction_fraction": 0.68137,
+    "rua_full_a5_vs_baseline_wall_clock_reduction_fraction": 0.70396,
+    "rua_full_a3_vs_previous_risk_adaptive_reduction_fraction": 0.06711,
+    "rua_full_a5_vs_previous_risk_adaptive_reduction_fraction": 0.13226,
+    "successful_state00_runs": 3,
+    "state01_success_preserved": false
+  },
+  "evidence_scope": "Two new successful state-00 real-LLM runs and one new state-01 stress run; not a population-level estimate."
+}
